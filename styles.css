@@ -91,10 +91,15 @@ Landing Page
     border-radius: 50%;
 }
 
-.social__link.hover {
-
+.mail__btn {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(75, 132, 236);
+    color: white;
 }
-
 
 /* 
 
@@ -127,6 +132,7 @@ nav {
 
 .nav__link {
     margin: 0 12px;
+    cursor: pointer;
 
 }
 
@@ -137,6 +143,3 @@ nav {
 
 }
 
-.fa-solid {
-    font-size: 20px;
-}
