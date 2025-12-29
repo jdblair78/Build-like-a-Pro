@@ -382,6 +382,7 @@ MODAL
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--loading {
@@ -400,6 +401,7 @@ MODAL
     font-weight: bold;
     text-align: center;
     padding: 28px;
+    z-index: -1;
 }
 
 @keyframes spinner{
