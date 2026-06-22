@@ -290,9 +290,9 @@ nav {
 }
 
 #personal-logo {
-    filter: invert(1);
     height: 50px;
     width: 50px;
+    color: white;
 }
 
 .nav__link--list {
