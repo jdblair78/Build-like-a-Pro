@@ -196,7 +196,7 @@ Landing Page
 
 .title--secondary,
 .blue {
-  color: rgb(75, 132, 236);
+  color: #1a9df5;
 }
 
 .social__list {
@@ -205,26 +205,51 @@ Landing Page
 }
 
 .social__link {
-  background-color: rgb(75, 132, 236);
-  color: white;
+  background: linear-gradient(
+  135deg,
+  #22b8ff 0%,
+  #1a9df5 35%,
+  #1678e8 70%,
+  #0b43bf 100%
+);
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.55);
+  border: none;
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(245, 245, 245);
   margin-top: 16px;
   padding: 6px;
-  height: 32px;
-  width: 32px;
+  height: 56px;
+  width: 128px;
   margin-right: 14px;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
 }
+
+.social__link,
+.social__link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 .mail__btn {
   width: 48px;
   height: 48px;
   font-size: 16px;
-  border-radius: 50%;
   border: none;
-  background-color: rgb(75, 132, 236);
+  border-radius: 10%;
+  background: linear-gradient(
+  135deg,
+  #22b8ff 0%,
+  #1a9df5 35%,
+  #1678e8 70%,
+  #0b43bf 100%
+);
   color: white;
   position: absolute;
   bottom: 32px;
