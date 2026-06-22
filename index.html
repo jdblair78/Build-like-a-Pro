@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua Blair</title>
-    <script src="java.js" defer></script> 
     <link rel="stylesheet" href="styles.css"></link>
     <script src="https://kit.fontawesome.com/616ad5bc36.js" crossorigin="anonymous"></script>
-    <script src="java.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init({
-            publicKey: "rbEVYvX32ReE_7wLx",
-            });
-        })();
-    </script>
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init({
+    publicKey: "rbEVYvX32ReE_7wLx",
+  });
+</script>
+
+<script src="java.js" defer></script>
 </head>
 <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
@@ -158,8 +155,8 @@
                         <label class="form__item--label">Message</label>
                         <textarea class="input" name="message" type="text"></textarea>
                     </div>
-                    <button id="contact__submit" class="form__submit">
-                        Sent It My Way!
+                   <button type="submit" id="contact__submit" class="form__submit">
+                        Send It My Way!
                     </button>
                 </form>
                 <div class="modal__overlay modal__overlay--loading">

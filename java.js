@@ -42,12 +42,15 @@ function contact(event) {
         loading.classList.remove("modal__overlay--visible")
         success.classList += " modal__overlay--visible"
     })
-    .catch (() => {
-        loading.classList.remove("modal__overlay--visible")
-    alert(
-        "This email service is temporarily unavailable. Please contact me directly on jdblair78@gmail.com"
-    )
-    })
+   .catch((error) => {
+  console.log("EmailJS error:", error);
+
+  loading.classList.remove("modal__overlay--visible");
+
+  alert(
+    "This email service is temporarily unavailable. Please contact me directly on jdblair78@gmail.com"
+  );
+});
 }
 
 function toggleModal() {
@@ -58,3 +61,4 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal__open"
 }
+
